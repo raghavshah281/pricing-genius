@@ -2,8 +2,8 @@
   "competitor": "notion",
   "display_name": "Notion",
   "url": "https://www.notion.com/pricing",
-  "extracted_at": "2026-04-10T16:02:08.440151Z",
-  "extraction_method": "python",
+  "extracted_at": "2026-04-10T17:15:38.812383Z",
+  "extraction_method": "hybrid",
   "data_version": 1,
   "plans": [
     {
@@ -12,16 +12,389 @@
       "label": null,
       "is_free": true,
       "is_custom_pricing": false,
-      "pricing": null,
-      "file_upload_limit": "5 MB",
+      "pricing": {
+        "monthly_per_unit": 0.0,
+        "annual_per_unit": 0.0,
+        "unit": "member",
+        "currency": "USD",
+        "annual_discount_pct": null
+      },
+      "file_upload_limit": "Up to 5 MB",
       "page_history_days": 7,
       "external_guests": 10,
       "charts": 1,
       "notion_site_domains": 1,
       "ai_data_retention_days": 30,
-      "teamspaces_open_closed": false,
+      "teamspaces_open_closed": true,
       "teamspaces_private": false,
-      "features": {}
+      "features": {
+        "content_collab": [
+          {
+            "name": "Pages & blocks",
+            "available": true,
+            "value": "Unlimited for individuals",
+            "note": "limited for 2+ members"
+          },
+          {
+            "name": "File uploads",
+            "available": true,
+            "value": "Up to 5 MB",
+            "note": null
+          },
+          {
+            "name": "Page history",
+            "available": true,
+            "value": "7 days",
+            "note": null
+          },
+          {
+            "name": "Verify any page",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Offline",
+            "available": true,
+            "value": "Choose pages to download for offline use.",
+            "note": null
+          }
+        ],
+        "sharing_collaboration": [
+          {
+            "name": "External guest limit",
+            "available": true,
+            "value": 10,
+            "note": null
+          },
+          {
+            "name": "Teamspaces (open & closed)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Teamspaces (private)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Permission groups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced teamspace permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular database permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "Notion AI Core (chat, generate, autofill, translate)",
+            "available": true,
+            "value": "Limited Trial",
+            "note": null
+          },
+          {
+            "name": "Meeting notes",
+            "available": true,
+            "value": "Limited Trial",
+            "note": "Beta"
+          },
+          {
+            "name": "Enterprise Search",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Research mode",
+            "available": true,
+            "value": "Limited Trial",
+            "note": "Beta"
+          },
+          {
+            "name": "Data retention",
+            "available": true,
+            "value": "30 day retention",
+            "note": null
+          },
+          {
+            "name": "Notion Agent",
+            "available": true,
+            "value": "Limited Trial",
+            "note": null
+          },
+          {
+            "name": "Custom Agents",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "integrations": [
+          {
+            "name": "Notion Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail AI",
+            "available": true,
+            "value": "Limited Trial",
+            "note": null
+          }
+        ],
+        "databases_automation": [
+          {
+            "name": "Subtasks and dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom properties and filtering",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts",
+            "available": true,
+            "value": 1,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": "Basic",
+            "note": null
+          },
+          {
+            "name": "Dashboards",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "api_automations_integrations": [
+          {
+            "name": "Public API",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Webhooks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Embeds and link previews",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Connected properties",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automations",
+            "available": true,
+            "value": "Basic",
+            "note": "buttons only"
+          },
+          {
+            "name": "1-way database syncs",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "web_publishing": [
+          {
+            "name": "Unlimited published pages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "notion.site domains",
+            "available": true,
+            "value": 1,
+            "note": null
+          },
+          {
+            "name": "Search engine indexing (SEO)",
+            "available": true,
+            "value": "Basic",
+            "note": null
+          },
+          {
+            "name": "Site customizations",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom domains and branding",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "security_admin": [
+          {
+            "name": "Export entire workspace as HTML, Markdown, & CSV",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "2-step verification",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Export entire workspace as PDF",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML single sign-on (SSO)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User provisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced workspace & teamspace security controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization level controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace analytics",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular admin roles",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit log",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin content search",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Domain Management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace consolidation",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed users dashboard & controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Security & Compliance integrations",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite requests",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom data retention settings",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "AI Meeting Notes transcript deletion",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Priority support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Premium support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer success manager",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
     },
     {
       "name": "Plus",
@@ -30,21 +403,778 @@
       "is_free": false,
       "is_custom_pricing": false,
       "pricing": {
-        "monthly_per_unit": 10.0,
-        "annual_per_unit": null,
+        "monthly_per_unit": 12.0,
+        "annual_per_unit": 10.0,
         "unit": "member",
         "currency": "USD",
         "annual_discount_pct": null
       },
-      "file_upload_limit": "unlimited",
+      "file_upload_limit": "Unlimited",
       "page_history_days": 30,
-      "external_guests": "unlimited",
-      "charts": "unlimited",
+      "external_guests": "Unlimited",
+      "charts": "Unlimited",
       "notion_site_domains": 5,
       "ai_data_retention_days": 30,
-      "teamspaces_open_closed": false,
+      "teamspaces_open_closed": true,
       "teamspaces_private": false,
-      "features": {}
+      "features": {
+        "content_collab": [
+          {
+            "name": "Pages & blocks",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "File uploads",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Page history",
+            "available": true,
+            "value": "30 days",
+            "note": null
+          },
+          {
+            "name": "Verify any page",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Offline",
+            "available": true,
+            "value": "Recents and Favorites auto-download for offline use.",
+            "note": null
+          }
+        ],
+        "sharing_collaboration": [
+          {
+            "name": "External guest limit",
+            "available": true,
+            "value": "Unlimited guests",
+            "note": null
+          },
+          {
+            "name": "Teamspaces (open & closed)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Teamspaces (private)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Permission groups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced teamspace permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular database permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "Notion AI Core (chat, generate, autofill, translate)",
+            "available": true,
+            "value": "Limited Trial",
+            "note": null
+          },
+          {
+            "name": "Meeting notes",
+            "available": true,
+            "value": "Limited Trial",
+            "note": "Beta"
+          },
+          {
+            "name": "Enterprise Search",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Research mode",
+            "available": true,
+            "value": "Limited Trial",
+            "note": "Beta"
+          },
+          {
+            "name": "Data retention",
+            "available": true,
+            "value": "30 day retention",
+            "note": null
+          },
+          {
+            "name": "Notion Agent",
+            "available": true,
+            "value": "Limited Trial",
+            "note": null
+          },
+          {
+            "name": "Custom Agents",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "integrations": [
+          {
+            "name": "Notion Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail AI",
+            "available": true,
+            "value": "Limited Trial",
+            "note": null
+          }
+        ],
+        "databases_automation": [
+          {
+            "name": "Subtasks and dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom properties and filtering",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": "Custom",
+            "note": null
+          },
+          {
+            "name": "Dashboards",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "api_automations_integrations": [
+          {
+            "name": "Public API",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Webhooks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Embeds and link previews",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Connected properties",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automations",
+            "available": true,
+            "value": "Custom",
+            "note": "database automations"
+          },
+          {
+            "name": "1-way database syncs",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "web_publishing": [
+          {
+            "name": "Unlimited published pages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "notion.site domains",
+            "available": true,
+            "value": 5,
+            "note": null
+          },
+          {
+            "name": "Search engine indexing (SEO)",
+            "available": true,
+            "value": "Advanced",
+            "note": null
+          },
+          {
+            "name": "Site customizations",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom domains and branding",
+            "available": true,
+            "value": "Pay per domain",
+            "note": null
+          }
+        ],
+        "security_admin": [
+          {
+            "name": "Export entire workspace as HTML, Markdown, & CSV",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "2-step verification",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Export entire workspace as PDF",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML single sign-on (SSO)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User provisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced workspace & teamspace security controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization level controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace analytics",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular admin roles",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit log",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin content search",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Domain Management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace consolidation",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed users dashboard & controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Security & Compliance integrations",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite requests",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom data retention settings",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "AI Meeting Notes transcript deletion",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Priority support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Premium support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer success manager",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "Business",
+      "slug": "business",
+      "label": "Recommended",
+      "is_free": false,
+      "is_custom_pricing": false,
+      "pricing": {
+        "monthly_per_unit": 24.0,
+        "annual_per_unit": 20.0,
+        "unit": "member",
+        "currency": "USD",
+        "annual_discount_pct": null
+      },
+      "file_upload_limit": "Unlimited",
+      "page_history_days": 90,
+      "external_guests": "Unlimited",
+      "charts": "Unlimited",
+      "notion_site_domains": 5,
+      "ai_data_retention_days": 30,
+      "teamspaces_open_closed": true,
+      "teamspaces_private": true,
+      "features": {
+        "content_collab": [
+          {
+            "name": "Pages & blocks",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "File uploads",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Page history",
+            "available": true,
+            "value": "90 days",
+            "note": null
+          },
+          {
+            "name": "Verify any page",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Offline",
+            "available": true,
+            "value": "Recents and Favorites auto-download for offline use.",
+            "note": null
+          }
+        ],
+        "sharing_collaboration": [
+          {
+            "name": "External guest limit",
+            "available": true,
+            "value": "Unlimited guests",
+            "note": null
+          },
+          {
+            "name": "Teamspaces (open & closed)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Teamspaces (private)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Permission groups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced teamspace permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular database permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "Notion AI Core (chat, generate, autofill, translate)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Meeting notes",
+            "available": true,
+            "value": null,
+            "note": "Beta"
+          },
+          {
+            "name": "Enterprise Search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Research mode",
+            "available": true,
+            "value": null,
+            "note": "Beta"
+          },
+          {
+            "name": "Data retention",
+            "available": true,
+            "value": "30 day retention",
+            "note": null
+          },
+          {
+            "name": "Notion Agent",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom Agents",
+            "available": true,
+            "value": null,
+            "note": "Requires AI credits"
+          }
+        ],
+        "integrations": [
+          {
+            "name": "Notion Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail AI",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "databases_automation": [
+          {
+            "name": "Subtasks and dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom properties and filtering",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": "Custom",
+            "note": "+ conditional logic"
+          },
+          {
+            "name": "Dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "api_automations_integrations": [
+          {
+            "name": "Public API",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Webhooks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Embeds and link previews",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Connected properties",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automations",
+            "available": true,
+            "value": "Same as plus",
+            "note": null
+          },
+          {
+            "name": "1-way database syncs",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "web_publishing": [
+          {
+            "name": "Unlimited published pages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "notion.site domains",
+            "available": true,
+            "value": 5,
+            "note": null
+          },
+          {
+            "name": "Search engine indexing (SEO)",
+            "available": true,
+            "value": "Advanced",
+            "note": null
+          },
+          {
+            "name": "Site customizations",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom domains and branding",
+            "available": true,
+            "value": "Pay per domain",
+            "note": null
+          }
+        ],
+        "security_admin": [
+          {
+            "name": "Export entire workspace as HTML, Markdown, & CSV",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "2-step verification",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Export entire workspace as PDF",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML single sign-on (SSO)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User provisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced workspace & teamspace security controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization level controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace analytics",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular admin roles",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit log",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin content search",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Domain Management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace consolidation",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed users dashboard & controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Security & Compliance integrations",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite requests",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom data retention settings",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "AI Meeting Notes transcript deletion",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Priority support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Premium support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer success manager",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
     },
     {
       "name": "Enterprise",
@@ -52,18 +1182,409 @@
       "label": null,
       "is_free": false,
       "is_custom_pricing": true,
-      "pricing": null,
-      "file_upload_limit": "unlimited",
-      "page_history_days": "unlimited",
-      "external_guests": "unlimited",
-      "charts": "unlimited",
+      "pricing": {
+        "monthly_per_unit": 32.0,
+        "annual_per_unit": 26.0,
+        "unit": "member",
+        "currency": "USD",
+        "annual_discount_pct": null
+      },
+      "file_upload_limit": "Unlimited",
+      "page_history_days": "Unlimited",
+      "external_guests": "Unlimited",
+      "charts": "Unlimited",
       "notion_site_domains": 5,
       "ai_data_retention_days": 0,
-      "teamspaces_open_closed": false,
-      "teamspaces_private": false,
-      "features": {}
+      "teamspaces_open_closed": true,
+      "teamspaces_private": true,
+      "features": {
+        "content_collab": [
+          {
+            "name": "Pages & blocks",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "File uploads",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Page history",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Verify any page",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Offline",
+            "available": true,
+            "value": "Recents and Favorites auto-download for offline use.",
+            "note": null
+          }
+        ],
+        "sharing_collaboration": [
+          {
+            "name": "External guest limit",
+            "available": true,
+            "value": "Unlimited guests",
+            "note": null
+          },
+          {
+            "name": "Teamspaces (open & closed)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Teamspaces (private)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Permission groups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced teamspace permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular database permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "Notion AI Core (chat, generate, autofill, translate)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Meeting notes",
+            "available": true,
+            "value": null,
+            "note": "Beta"
+          },
+          {
+            "name": "Enterprise Search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Research mode",
+            "available": true,
+            "value": null,
+            "note": "Beta"
+          },
+          {
+            "name": "Data retention",
+            "available": true,
+            "value": "Zero data retention",
+            "note": null
+          },
+          {
+            "name": "Notion Agent",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom Agents",
+            "available": true,
+            "value": null,
+            "note": "Requires AI credits"
+          }
+        ],
+        "integrations": [
+          {
+            "name": "Notion Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notion Mail AI",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "databases_automation": [
+          {
+            "name": "Subtasks and dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom properties and filtering",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts",
+            "available": true,
+            "value": "Unlimited",
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": "Custom",
+            "note": "+ conditional logic"
+          },
+          {
+            "name": "Dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "api_automations_integrations": [
+          {
+            "name": "Public API",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Webhooks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Embeds and link previews",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Connected properties",
+            "available": true,
+            "value": "Same as business",
+            "note": null
+          },
+          {
+            "name": "Automations",
+            "available": true,
+            "value": "Same as plus",
+            "note": null
+          },
+          {
+            "name": "1-way database syncs",
+            "available": true,
+            "value": "Same as business",
+            "note": null
+          }
+        ],
+        "web_publishing": [
+          {
+            "name": "Unlimited published pages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "notion.site domains",
+            "available": true,
+            "value": 5,
+            "note": null
+          },
+          {
+            "name": "Search engine indexing (SEO)",
+            "available": true,
+            "value": "Advanced",
+            "note": null
+          },
+          {
+            "name": "Site customizations",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom domains and branding",
+            "available": true,
+            "value": "Pay per domain",
+            "note": null
+          }
+        ],
+        "security_admin": [
+          {
+            "name": "Export entire workspace as HTML, Markdown, & CSV",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "2-step verification",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Export entire workspace as PDF",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML single sign-on (SSO)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User provisioning (SCIM)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced workspace & teamspace security controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization level controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace analytics",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Granular admin roles",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit log",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin content search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Domain Management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workspace consolidation",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed users dashboard & controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Security & Compliance integrations",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite requests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom data retention settings",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "AI Meeting Notes transcript deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Priority support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Premium support",
+            "available": true,
+            "value": "Custom",
+            "note": null
+          },
+          {
+            "name": "Customer success manager",
+            "available": true,
+            "value": "Custom",
+            "note": null
+          }
+        ]
+      }
     }
   ],
-  "add_ons": [],
-  "special_programs": []
+  "add_ons": [
+    {
+      "name": "Custom Agents",
+      "monthly_price": "$10 per 1,000 credits",
+      "annual_price": null,
+      "description": "AI agents handle repetitive tasks autonomously, so your team doesn’t have to. Free to try, then $10 per 1,000 credits."
+    },
+    {
+      "name": "Custom Domains",
+      "monthly_price": "$10/month per domain",
+      "annual_price": "$8/month/domain",
+      "description": "Connect a custom domain to your Site and remove Notion branding."
+    }
+  ],
+  "special_programs": [
+    {
+      "name": "Student/Educator Discount",
+      "description": "The Plus Plan (with a 1-member limit) is free for students and educators. Compared to the Free Plan, you’ll be able to add more guests, have access to more version history, and upload larger files. Just sign up with your school email address and you’ll immediately gain access to these features. Thousands of school email domains are eligible, not just .edu!"
+    }
+  ]
 }

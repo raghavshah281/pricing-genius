@@ -56,8 +56,8 @@ class NotionPlan(BaseModel):
     def pricing_consistency(self) -> "NotionPlan":
         if self.is_free and self.pricing is not None and self.pricing.monthly_per_unit and self.pricing.monthly_per_unit > 0:
             raise ValueError("Free plan should not have a price > 0")
-        if self.is_custom_pricing and self.pricing is not None:
-            raise ValueError("Custom pricing plans should not have pricing info")
+        # Note: Notion Enterprise has published prices, so we allow
+        # is_custom_pricing=True with pricing info for Notion
         return self
 
 

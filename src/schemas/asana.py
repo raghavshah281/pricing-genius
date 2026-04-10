@@ -82,9 +82,9 @@ class AsanaAIStudioTier(BaseModel):
 class AsanaAIStudio(BaseModel):
     """AI Studio add-on details."""
 
-    eligible_plans: list[str] = Field(description="Plan slugs that support AI Studio")
+    eligible_plans: list[str] = Field(default_factory=list, description="Plan slugs that support AI Studio")
     tiers: list[AsanaAIStudioTier] = Field(default_factory=list)
-    credit_packs: list[dict] = Field(
+    credit_packs: list[dict] | None = Field(
         default_factory=list,
         description="Credit pack options: [{credits: 1000, price: '$100'}]"
     )

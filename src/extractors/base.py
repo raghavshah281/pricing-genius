@@ -85,6 +85,7 @@ class BaseExtractor(ABC):
 
         # Layer 2a: Code extraction
         code_result = None
+        html = None
         try:
             html = await self.fetch_html()
             code_result = await self.code_extract(html)
@@ -105,18 +106,16 @@ class BaseExtractor(ABC):
             except Exception as e:
                 logger.warning(f"AI Vision extraction failed for {self.display_name}: {e}")
         else:
-            logger.info(
-                f"No screenshots available for {self.display_name} — "
-                f"using code extraction only"
-            )
-
-            # Fallback: if no screenshot AND no code result, try HTML-based AI
-            if code_result is None:
-                try:
-                    ai_result = await self._ai_extract_from_html(html)
-                    logger.info(f"HTML-based AI extraction succeeded for {self.display_name}")
-                except Exception as e:
-                    logger.warning(f"HTML-based AI fallback also failed: {e}")
+            # No screenshots — always try HTML-based AI for features
+            # (code extraction only gets prices, AI gets the comparison table)
+            logger.info(f"No screenshots for {self.display_name} — trying HTML-based AI")
+            try:
+                if html is None:
+                    html = await self.fetch_html()
+                ai_result = await self._ai_extract_from_html(html)
+                logger.info(f"HTML-based AI extraction succeeded for {self.display_name}")
+            except Exception as e:
+                logger.warning(f"HTML-based AI extraction failed for {self.display_name}: {e}")
 
         # Layer 3: Reconciliation
         merged, warnings = reconcile(code_result, ai_result, self.competitor)

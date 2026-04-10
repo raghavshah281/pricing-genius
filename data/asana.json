@@ -2,41 +2,885 @@
   "competitor": "asana",
   "display_name": "Asana",
   "url": "https://asana.com/pricing",
-  "extracted_at": "2026-04-10T16:02:02.173478Z",
-  "extraction_method": "python",
+  "extracted_at": "2026-04-10T17:23:00.068339Z",
+  "extraction_method": "hybrid",
   "data_version": 1,
   "plans": [
     {
       "name": "Personal",
       "slug": "personal",
-      "tagline": null,
-      "is_free": false,
+      "tagline": "For one or two people managing personal projects.",
+      "is_free": true,
       "is_custom_pricing": false,
-      "pricing": {
-        "monthly_per_unit": null,
-        "annual_per_unit": 0.0,
-        "unit": "user",
-        "currency": "USD",
-        "annual_discount_pct": null
-      },
+      "pricing": null,
       "estimated_price_per_user_month": null,
       "trial": null,
-      "users": null,
+      "users": {
+        "min": null,
+        "max": 2
+      },
       "automations_per_month_org": null,
       "ai_actions_per_month": null,
-      "storage_per_file_mb": null,
+      "storage_per_file_mb": 100,
       "portfolios": null,
       "projects_per_portfolio": null,
-      "features": {}
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "with integrations"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization exports",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed workspaces",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "IP allowlisting",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": 2,
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Mobile app controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Video recording management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Form access for domains",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Disable file attachments",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Sandboxes",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
     },
     {
       "name": "Starter",
       "slug": "starter",
-      "tagline": null,
+      "tagline": "For growing teams that need to track their projects' progress and hit deadlines.",
       "is_free": false,
       "is_custom_pricing": false,
       "pricing": {
-        "monthly_per_unit": null,
+        "monthly_per_unit": 13.49,
         "annual_per_unit": 10.99,
         "unit": "user",
         "currency": "USD",
@@ -44,22 +888,872 @@
       },
       "estimated_price_per_user_month": null,
       "trial": null,
-      "users": null,
-      "automations_per_month_org": null,
+      "users": {
+        "min": null,
+        "max": null
+      },
+      "automations_per_month_org": "unlimited",
       "ai_actions_per_month": null,
       "storage_per_file_mb": null,
       "portfolios": null,
       "projects_per_portfolio": null,
-      "features": {}
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "with integrations"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization exports",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed workspaces",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "IP allowlisting",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": true,
+            "value": "Project only",
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Mobile app controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Video recording management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Form access for domains",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Disable file attachments",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Sandboxes",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
     },
     {
       "name": "Advanced",
       "slug": "advanced",
-      "tagline": null,
+      "tagline": "For companies that need to manage a portfolio of work and goals across departments.",
       "is_free": false,
       "is_custom_pricing": false,
       "pricing": {
-        "monthly_per_unit": null,
+        "monthly_per_unit": 30.49,
         "annual_per_unit": 24.99,
         "unit": "user",
         "currency": "USD",
@@ -67,15 +1761,4393 @@
       },
       "estimated_price_per_user_month": null,
       "trial": null,
-      "users": null,
-      "automations_per_month_org": null,
+      "users": {
+        "min": null,
+        "max": null
+      },
+      "automations_per_month_org": "unlimited",
       "ai_actions_per_month": null,
       "storage_per_file_mb": null,
-      "portfolios": null,
+      "portfolios": "unlimited",
       "projects_per_portfolio": null,
-      "features": {}
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "native"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization exports",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed workspaces",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "IP allowlisting",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": true,
+            "value": "Project only",
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Mobile app controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Video recording management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Form access for domains",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Disable file attachments",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Sandboxes",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "Advanced",
+      "slug": "advanced",
+      "tagline": "For companies that need to manage a portfolio of work and goals across departments.",
+      "is_free": false,
+      "is_custom_pricing": false,
+      "pricing": {
+        "monthly_per_unit": 30.49,
+        "annual_per_unit": 24.99,
+        "unit": "user",
+        "currency": "USD",
+        "annual_discount_pct": null
+      },
+      "estimated_price_per_user_month": null,
+      "trial": null,
+      "users": {
+        "min": null,
+        "max": null
+      },
+      "automations_per_month_org": "unlimited",
+      "ai_actions_per_month": null,
+      "storage_per_file_mb": null,
+      "portfolios": "unlimited",
+      "projects_per_portfolio": null,
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "native"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization exports",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed workspaces",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "IP allowlisting",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Mobile app controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Video recording management",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Form access for domains",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Disable file attachments",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced permissions",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Sandboxes",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "Enterprise",
+      "slug": "enterprise",
+      "tagline": "For companies that need to coordinate and automate complex work across departments, without limits.",
+      "is_free": false,
+      "is_custom_pricing": true,
+      "pricing": null,
+      "estimated_price_per_user_month": null,
+      "trial": null,
+      "users": {
+        "min": null,
+        "max": null
+      },
+      "automations_per_month_org": "unlimited",
+      "ai_actions_per_month": null,
+      "storage_per_file_mb": null,
+      "portfolios": "unlimited",
+      "projects_per_portfolio": null,
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "native"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization exports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed workspaces",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "IP allowlisting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": "Add-on"
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Mobile app controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Video recording management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Form access for domains",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Disable file attachments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Sandboxes",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "Enterprise+",
+      "slug": "enterprise-plus",
+      "tagline": "For companies that need to meet strict compliance requirements with flexible, precise controls.",
+      "is_free": false,
+      "is_custom_pricing": true,
+      "pricing": null,
+      "estimated_price_per_user_month": null,
+      "trial": null,
+      "users": {
+        "min": null,
+        "max": null
+      },
+      "automations_per_month_org": "unlimited",
+      "ai_actions_per_month": null,
+      "storage_per_file_mb": null,
+      "portfolios": "unlimited",
+      "projects_per_portfolio": null,
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "native"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Organization exports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Managed workspaces",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "IP allowlisting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Mobile app controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Video recording management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Form access for domains",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Disable file attachments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Sandboxes",
+            "available": false,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": null
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "Enterprise+",
+      "slug": "enterprise-plus",
+      "tagline": "For companies that need to meet strict compliance requirements with flexible, precise controls.",
+      "is_free": false,
+      "is_custom_pricing": true,
+      "pricing": null,
+      "estimated_price_per_user_month": null,
+      "trial": null,
+      "users": {
+        "min": null,
+        "max": null
+      },
+      "automations_per_month_org": "unlimited",
+      "ai_actions_per_month": null,
+      "storage_per_file_mb": null,
+      "portfolios": "unlimited",
+      "projects_per_portfolio": null,
+      "features": {
+        "project_management_essentials": [
+          {
+            "name": "Unlimited tasks",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited projects",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Unlimited comments",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited storage, 100MB per file",
+            "available": true,
+            "value": 100,
+            "note": null
+          },
+          {
+            "name": "Unlimited messages",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Activity logs",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Desktop app, iOS and Android mobile apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Recurring tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-select and bulk actions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-home tasks to projects",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "ai": [
+          {
+            "name": "AI Studio (with additional credits for purchase)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart chat (also available in Slack and MS Teams)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart editor",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Words to workflows",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on tasks and projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Risk reports",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart status on portfolios and goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart summaries on portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Smart goals",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "views": [
+          {
+            "name": "Project overview",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "List",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Board",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Calendar",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "My tasks",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Notes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Timeline",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Gantt",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolios",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "automation": [
+          {
+            "name": "100+ free integrations, including Microsoft 365, Google Workspace, Slack, and other everyday apps",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Start dates and times",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Task dependencies",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow builder",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom field management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project template management dashboard",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom templates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom task types",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited rules",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Forms with branching logic",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Critical path",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Proofing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Approvals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integration with Jira Cloud (two-way sync)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Workflow bundles",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "goals": [
+          {
+            "name": "Goals (company, team, and individual levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal strategy map",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Automatic goal progress",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weighted goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reporting on goals",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Saved grid views",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Goal templates and goal types (objectives, key results)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "reporting": [
+          {
+            "name": "CSV and PDF export",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Status updates",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Reference custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts customization",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Charts template library",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Advanced search",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Milestones",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal reporting",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Formulas",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Integrations with Salesforce, Tableau, and Power BI",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio dashboards",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Portfolio summary report (PDF export)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "PowerPoint export (portfolios, dashboards)",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "resource_management": [
+          {
+            "name": "Timesheets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "User rates",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Project budgets",
+            "available": false,
+            "value": null,
+            "note": "Timesheets & Budgets add-on"
+          },
+          {
+            "name": "Time tracking",
+            "available": true,
+            "value": null,
+            "note": "native"
+          },
+          {
+            "name": "Portfolio workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Universal workload",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Capacity planning",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Placeholder profiles",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ],
+        "admin_security": [
+          {
+            "name": "SOC 2 Type II",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-factor authentication",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "256-bit encryption at rest and in-transit",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Cross regional backups",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Data deletion",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Google SSO",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "SAML",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Read-only link management",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Audit Log API (built to support SIEM)",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "SIEM integration (Splunk)",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "eDiscovery integration (Exterro, Hanzo)",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "Data Loss Prevention (DLP) integration (Netskope)",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "Archiving integration (Theta Lake)",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "Organization exports",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "Managed workspaces",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "IP allowlisting",
+            "available": false,
+            "value": null,
+            "note": "Compliance mgmt. add-on"
+          },
+          {
+            "name": "Data residency, see requirements",
+            "available": false,
+            "value": null,
+            "note": "Opt-in"
+          },
+          {
+            "name": "Enterprise Key Management, subject to eligibility",
+            "available": false,
+            "value": null,
+            "note": "Opt-in"
+          },
+          {
+            "name": "HIPAA compliance available, see requirements",
+            "available": false,
+            "value": null,
+            "note": "Opt-in"
+          },
+          {
+            "name": "User limit",
+            "available": true,
+            "value": "unlimited",
+            "note": null
+          },
+          {
+            "name": "Private teams",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Private projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Unlimited free guests",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin console",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Comment-only projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team sharing on projects",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Pause a member’s license",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Access controls (project, portfolio, and goal levels)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Lock custom fields",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom branding",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Custom onboarding",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Admin announcements",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "User and group provisioning and deprovisioning (SCIM)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Guest invite permissions",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Project controls via project admin",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Team membership controls via team admin",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Service accounts",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "View-only licensing",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "App management",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Automatic guest removal",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Allow guests to be invited from a trusted domain",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Mobile app controls",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Video recording management",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Form access for domains",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Disable file attachments",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Custom role-based access controls",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Advanced permissions",
+            "available": false,
+            "value": null,
+            "note": "Permissions mgmt. add-on"
+          },
+          {
+            "name": "Sandboxes",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Multi-org deployment",
+            "available": false,
+            "value": null,
+            "note": "Opt-in"
+          }
+        ],
+        "support": [
+          {
+            "name": "Asana Forum",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Academy",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana webinars",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Help Center",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Developer Guide",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Asana Support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Customer Success options (conditions apply)",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "24/7 support",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "99.9% uptime SLA",
+            "available": true,
+            "value": null,
+            "note": null
+          },
+          {
+            "name": "Weekend support for complex data migrations",
+            "available": true,
+            "value": null,
+            "note": null
+          }
+        ]
+      }
     }
   ],
-  "ai_studio": null,
-  "seat_scaling": []
+  "ai_studio": {
+    "eligible_plans": [
+      "starter",
+      "advanced",
+      "enterprise",
+      "enterprise-plus"
+    ],
+    "tiers": [
+      {
+        "name": "AI Studio Basic",
+        "description": "Included access to AI Studio to explore how AI can help take on routine, manual work (includes rate limits).",
+        "pricing": "included",
+        "billing": null
+      },
+      {
+        "name": "AI Studio Plus",
+        "description": "Paid access to AI Studio to level up productivity for individuals and small teams (available on monthly & annual plans).",
+        "pricing": "paid",
+        "billing": "monthly/annual"
+      },
+      {
+        "name": "AI Studio Pro",
+        "description": "Paid access to AI Studio to scale complex workflows and business operations with advanced billing controls (available on an annual plan).",
+        "pricing": "paid",
+        "billing": "annual only"
+      }
+    ],
+    "credit_packs": null
+  },
+  "seat_scaling": [
+    {
+      "range_start": 2,
+      "range_end": 5,
+      "increment": 1
+    },
+    {
+      "range_start": 6,
+      "range_end": 30,
+      "increment": 5
+    },
+    {
+      "range_start": 31,
+      "range_end": 100,
+      "increment": 10
+    },
+    {
+      "range_start": 101,
+      "range_end": 500,
+      "increment": 25
+    },
+    {
+      "range_start": 501,
+      "range_end": null,
+      "increment": 50
+    }
+  ]
 }

@@ -1,7 +1,10 @@
 """Monday.com pricing extractor.
 
-Code extraction: prices from i18n bundle + JSON-LD.
-AI extraction: full comparison table from screenshot (primary source for features).
+Code extraction: prices from visible HTML ($9/$12/$19 per seat), global policies from i18n.
+AI extraction: full comparison table features from HTML (table is JS-rendered but i18n data helps).
+
+Monday's pricing page stores feature data in i18n translation keys which we
+pass to the AI alongside the HTML for comprehensive extraction.
 """
 
 from __future__ import annotations
@@ -22,26 +25,41 @@ class MondayExtractor(BaseExtractor):
     schema_cls = MondayPricing
 
     async def code_extract(self, html: str) -> dict[str, Any] | None:
-        """Extract prices from Monday's i18n bundle and JSON-LD."""
+        """Extract prices and global policies from Monday's page."""
+
+        # Extract i18n translation keys for feature data
+        i18n = {}
+        for match in re.finditer(r'"(pricingPage\.[^"]+)"\s*:\s*"([^"]*?)"', html):
+            i18n[match.group(1)] = match.group(2)
+
+        # Extract prices from visible price elements
+        # Monday shows: $9/seat (Basic annual), $12 (Standard), $19 (Pro)
+        # These appear as plain text in the HTML
         prices = {}
 
-        # Try JSON-LD first
-        json_ld = re.findall(
-            r'<script[^>]*type="application/ld\+json"[^>]*>([\s\S]*?)</script>', html
-        )
-        for block in json_ld:
-            try:
-                data = json.loads(block)
-                if isinstance(data, dict) and data.get("@type") == "Product":
-                    for offer in data.get("offers", []):
-                        name = offer.get("name", "").lower()
-                        price = offer.get("price")
-                        if price and name:
-                            prices[name] = {"annual_per_unit": float(price)}
-            except (json.JSONDecodeError, ValueError):
-                continue
+        # Pattern: look for price near plan name
+        plan_price_patterns = [
+            ("basic", r"(?:Basic|basic)[\s\S]{0,200}?\$(\d+)"),
+            ("standard", r"(?:Standard|standard)[\s\S]{0,200}?\$(\d+)"),
+            ("pro", r"(?:Pro|pro)[\s\S]{0,200}?\$(\d+)"),
+        ]
+        for slug, pattern in plan_price_patterns:
+            match = re.search(pattern, html)
+            if match:
+                price = float(match.group(1))
+                if 5 <= price <= 50:  # Sanity check
+                    prices[slug] = price
 
-        # Build partial result with prices only
+        # Fallback: extract all dollar amounts and use known positions
+        if not prices:
+            all_prices = re.findall(r"\$(\d+)", html)
+            # Filter to reasonable per-seat prices
+            reasonable = [float(p) for p in all_prices if 5 <= float(p) <= 50]
+            unique = sorted(set(reasonable))
+            if len(unique) >= 3:
+                prices = {"basic": unique[0], "standard": unique[1], "pro": unique[2]}
+
+        # Build plans with code-extracted data
         tiers = ["free", "basic", "standard", "pro", "enterprise"]
         plans = []
         for tier in tiers:
@@ -60,15 +78,12 @@ class MondayExtractor(BaseExtractor):
                 plan["free_seats_limit"] = 2
             elif tier == "enterprise":
                 plan["pricing"] = None
-            else:
-                price_data = prices.get(tier, {})
-                if price_data:
-                    plan["pricing"] = {
-                        "annual_per_unit": price_data.get("annual_per_unit"),
-                        "monthly_per_unit": price_data.get("monthly_per_unit"),
-                        "unit": "seat",
-                        "currency": "USD",
-                    }
+            elif tier in prices:
+                plan["pricing"] = {
+                    "annual_per_unit": prices[tier],
+                    "unit": "seat",
+                    "currency": "USD",
+                }
 
             plans.append(plan)
 
@@ -87,23 +102,62 @@ class MondayExtractor(BaseExtractor):
                 "refund_window_days": 30,
             },
             "products": [
-                {
-                    "name": "Work Management",
-                    "slug": "work-management",
-                    "plans": plans,
-                }
+                {"name": "Work Management", "slug": "work-management", "plans": plans}
             ],
         }
 
+    async def fetch_html(self) -> str:
+        """Fetch Monday HTML and append i18n feature data for AI extraction."""
+        import httpx
+
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/125.0.0.0 Safari/537.36"
+            ),
+        }
+
+        async with httpx.AsyncClient(follow_redirects=True, timeout=30.0) as client:
+            response = await client.get(self.url, headers=headers)
+            response.raise_for_status()
+            html = response.text
+
+        # Extract i18n feature data and prepend to HTML for AI
+        pricing_features = []
+        for match in re.finditer(r'"(pricingPage\.[^"]+)"\s*:\s*"([^"]*?)"', html):
+            key, value = match.group(1), match.group(2)
+            if value and not value.startswith("http"):
+                pricing_features.append(f"{key} = {value}")
+
+        if pricing_features:
+            feature_block = (
+                "\n<!-- MONDAY.COM STRUCTURED FEATURE DATA -->\n"
+                + "\n".join(pricing_features)
+                + "\n<!-- END FEATURE DATA -->\n"
+            )
+            # Prepend so it doesn't get truncated during cleaning
+            html = feature_block + html
+
+        return html
+
     def get_extraction_prompt(self) -> str:
         return """### Monday.com Specifics
-- Focus on Work Management product only
+- Focus on Work Management product ONLY
 - Plans: Free, Basic, Standard, Pro, Enterprise
 - Prices are "per seat/month" — minimum 3 seats on paid plans
-- The comparison table has MANY sections: Essentials, Collaboration,
-  Productivity, Views and reporting, Resource management, Security & privacy,
-  Administration & control, Advanced reporting & analytics, Support
-- There are 50+ features across these sections — extract ALL of them
-- Each cell shows: checkmark, dash, or a specific value
+- The HTML includes a STRUCTURED FEATURE DATA section at the top with i18n translation keys
+  containing feature names, descriptions, and per-tier feature lists
+- Use this structured data to build the complete comparison table
+- Feature sections: Essentials, Collaboration, Productivity, Views and reporting,
+  Resource management, Security & privacy, Administration & control,
+  Advanced reporting & analytics, Support
+- Key values to extract per tier:
+  - Boards: 3 (Free) → Unlimited
+  - Items: 1000 (Free) → Unlimited
+  - Storage: 500MB → 5GB → 20GB → 100GB → 1000GB
+  - Automations: none → none → 250/mo → 25K/mo → 250K/mo
+  - Integrations: same as automations
+  - Dashboards: none → 1 board → 5 boards → 20 boards → 50 boards
 - url: "https://monday.com/pricing"
 """

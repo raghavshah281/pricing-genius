@@ -2,8 +2,8 @@
   "competitor": "monday",
   "display_name": "Monday.com",
   "url": "https://monday.com/pricing",
-  "extracted_at": "2026-04-10T16:02:11.472144Z",
-  "extraction_method": "python",
+  "extracted_at": "2026-04-10T17:19:20.980384Z",
+  "extraction_method": "hybrid",
   "data_version": 1,
   "global_policies": {
     "minimum_seats": 3,
@@ -28,46 +28,360 @@
           "custom_dashboards": null,
           "columns_per_board": null,
           "quotes_invoices_per_month": null,
-          "features": {}
+          "features": {
+            "Essentials": [
+              {
+                "name": "Boards",
+                "available": true,
+                "value": 3,
+                "note": null
+              },
+              {
+                "name": "Items",
+                "available": true,
+                "value": 1000,
+                "note": null
+              },
+              {
+                "name": "Storage",
+                "available": true,
+                "value": "500MB",
+                "note": null
+              },
+              {
+                "name": "Docs",
+                "available": true,
+                "value": 3,
+                "note": null
+              },
+              {
+                "name": "Templates",
+                "available": true,
+                "value": "200+",
+                "note": null
+              },
+              {
+                "name": "Column types",
+                "available": true,
+                "value": 8,
+                "note": null
+              },
+              {
+                "name": "iOS and Android apps",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Automations": [
+              {
+                "name": "Automations",
+                "available": false,
+                "value": "none",
+                "note": null
+              }
+            ],
+            "Integrations": [
+              {
+                "name": "Integrations",
+                "available": false,
+                "value": "none",
+                "note": null
+              }
+            ],
+            "Views and reporting": [
+              {
+                "name": "Dashboards",
+                "available": false,
+                "value": "none",
+                "note": null
+              }
+            ]
+          }
         },
         {
           "name": "Basic",
           "slug": "basic",
           "is_free": false,
           "is_custom_pricing": false,
-          "pricing": null,
+          "pricing": {
+            "monthly_per_unit": null,
+            "annual_per_unit": 9.0,
+            "unit": "seat",
+            "currency": "USD",
+            "annual_discount_pct": null
+          },
           "free_seats_limit": null,
           "active_contacts_deals": null,
-          "custom_dashboards": null,
+          "custom_dashboards": 1,
           "columns_per_board": null,
           "quotes_invoices_per_month": null,
-          "features": {}
+          "features": {
+            "Essentials": [
+              {
+                "name": "Boards",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Items",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Storage",
+                "available": true,
+                "value": "5GB",
+                "note": null
+              },
+              {
+                "name": "AI credits",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "Unlimited free viewers",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Automations": [
+              {
+                "name": "Automations",
+                "available": false,
+                "value": "none",
+                "note": null
+              }
+            ],
+            "Integrations": [
+              {
+                "name": "Integrations",
+                "available": false,
+                "value": "none",
+                "note": null
+              }
+            ],
+            "Support": [
+              {
+                "name": "Prioritised customer support",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Views and reporting": [
+              {
+                "name": "Dashboards",
+                "available": true,
+                "value": 1,
+                "note": null
+              }
+            ]
+          }
         },
         {
           "name": "Standard",
           "slug": "standard",
           "is_free": false,
           "is_custom_pricing": false,
-          "pricing": null,
+          "pricing": {
+            "monthly_per_unit": null,
+            "annual_per_unit": 12.0,
+            "unit": "seat",
+            "currency": "USD",
+            "annual_discount_pct": null
+          },
           "free_seats_limit": null,
           "active_contacts_deals": null,
-          "custom_dashboards": null,
+          "custom_dashboards": 5,
           "columns_per_board": null,
           "quotes_invoices_per_month": null,
-          "features": {}
+          "features": {
+            "Essentials": [
+              {
+                "name": "Boards",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Items",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Storage",
+                "available": true,
+                "value": "20GB",
+                "note": null
+              },
+              {
+                "name": "AI credits",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "AI Sidekick (lite)",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Views and reporting": [
+              {
+                "name": "Timeline & Gantt views",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "Calendar View",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "Dashboards",
+                "available": true,
+                "value": 5,
+                "note": null
+              }
+            ],
+            "Collaboration": [
+              {
+                "name": "Guest access",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Automations": [
+              {
+                "name": "Automations",
+                "available": true,
+                "value": "250 actions per month",
+                "note": null
+              }
+            ],
+            "Integrations": [
+              {
+                "name": "Integrations",
+                "available": true,
+                "value": "250 actions per month",
+                "note": null
+              }
+            ]
+          }
         },
         {
           "name": "Pro",
           "slug": "pro",
           "is_free": false,
           "is_custom_pricing": false,
-          "pricing": null,
+          "pricing": {
+            "monthly_per_unit": null,
+            "annual_per_unit": 9.0,
+            "unit": "seat",
+            "currency": "USD",
+            "annual_discount_pct": null
+          },
           "free_seats_limit": null,
           "active_contacts_deals": null,
-          "custom_dashboards": null,
+          "custom_dashboards": 20,
           "columns_per_board": null,
           "quotes_invoices_per_month": null,
-          "features": {}
+          "features": {
+            "Essentials": [
+              {
+                "name": "Boards",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Items",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Storage",
+                "available": true,
+                "value": "100GB",
+                "note": null
+              },
+              {
+                "name": "AI credits",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "AI Sidekick (lite)",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Security & privacy": [
+              {
+                "name": "Private boards",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Views and reporting": [
+              {
+                "name": "Chart View",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "Dashboards",
+                "available": true,
+                "value": 20,
+                "note": null
+              }
+            ],
+            "Productivity": [
+              {
+                "name": "Time tracking",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "Formula Column",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Automations": [
+              {
+                "name": "Automations",
+                "available": true,
+                "value": "25K actions per month",
+                "note": null
+              }
+            ],
+            "Integrations": [
+              {
+                "name": "Integrations",
+                "available": true,
+                "value": "25K actions per month",
+                "note": null
+              }
+            ]
+          }
         },
         {
           "name": "Enterprise",
@@ -77,10 +391,119 @@
           "pricing": null,
           "free_seats_limit": null,
           "active_contacts_deals": null,
-          "custom_dashboards": null,
+          "custom_dashboards": 50,
           "columns_per_board": null,
           "quotes_invoices_per_month": null,
-          "features": {}
+          "features": {
+            "Essentials": [
+              {
+                "name": "Boards",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Items",
+                "available": true,
+                "value": "Unlimited",
+                "note": null
+              },
+              {
+                "name": "Storage",
+                "available": true,
+                "value": "1000GB",
+                "note": null
+              },
+              {
+                "name": "Enterprise AI bundle",
+                "available": true,
+                "value": null,
+                "note": "Unlock advanced AI capabilities with monday's all in one bundle, customized for your needs"
+              },
+              {
+                "name": "AI credits",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "AI Sidekick (plus)",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Resource management": [
+              {
+                "name": "Portfolio management",
+                "available": true,
+                "value": null,
+                "note": null
+              },
+              {
+                "name": "Resource management",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Automations": [
+              {
+                "name": "Automations",
+                "available": true,
+                "value": "250K actions per month",
+                "note": null
+              }
+            ],
+            "Integrations": [
+              {
+                "name": "Integrations",
+                "available": true,
+                "value": "250K actions per month",
+                "note": null
+              }
+            ],
+            "Administration & control": [
+              {
+                "name": "Multi-level permissions",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Security & privacy": [
+              {
+                "name": "Enterprise-grade security & governance",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Advanced reporting & analytics": [
+              {
+                "name": "Advanced reporting & analytics",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ],
+            "Views and reporting": [
+              {
+                "name": "Dashboards",
+                "available": true,
+                "value": 50,
+                "note": null
+              }
+            ],
+            "Support": [
+              {
+                "name": "Enterprise support",
+                "available": true,
+                "value": null,
+                "note": null
+              }
+            ]
+          }
         }
       ]
     }

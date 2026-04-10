@@ -19,6 +19,7 @@ class BillingUnit(str, Enum):
 class ExtractionMethod(str, Enum):
     PYTHON = "python"
     AI = "ai"
+    HYBRID = "hybrid"
     MANUAL = "manual"
 
 
