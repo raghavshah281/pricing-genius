@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from mcp.server.fastmcp import FastMCP
+from mcp.server.transport_security import TransportSecuritySettings
 
 mcp = FastMCP(
     "Pricing Genius",
@@ -19,6 +20,10 @@ mcp = FastMCP(
         "Competitive pricing intelligence for ClickUp. "
         "Query pricing data for Smartsheet, Wrike, Asana, Notion, and Monday.com. "
         "Data is extracted daily from competitor pricing pages."
+    ),
+    # Disable DNS rebinding protection for Cloud Run (behind GCP's proxy)
+    transport_security=TransportSecuritySettings(
+        enable_dns_rebinding_protection=False,
     ),
 )
 
@@ -33,17 +38,8 @@ if __name__ == "__main__":
     if transport == "stdio":
         mcp.run(transport="stdio")
     else:
-        # Use uvicorn directly to bind to Cloud Run's PORT
         import uvicorn
 
         port = int(os.getenv("PORT", "8080"))
         app = mcp.streamable_http_app()
-
-        # Cloud Run uses a proxy — disable trusted host checking
-        uvicorn.run(
-            app,
-            host="0.0.0.0",
-            port=port,
-            forwarded_allow_ips="*",
-            proxy_headers=True,
-        )
+        uvicorn.run(app, host="0.0.0.0", port=port)
