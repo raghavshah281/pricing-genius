@@ -1,9 +1,9 @@
 name: Daily Pricing Extraction
 
 on:
-  schedule:
+  #schedule:
     # 12:00 AM IST = 6:30 PM UTC (previous day)
-    - cron: '30 18 * * *'
+    #- cron: '30 18 * * *'
   workflow_dispatch: # Manual trigger
 
 permissions:
